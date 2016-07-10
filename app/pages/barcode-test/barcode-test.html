@@ -4,7 +4,7 @@
     <button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Local Notification</ion-title>
+    <ion-title>Barcode</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -12,8 +12,8 @@
 
 <ion-content padding>
 
-  <button block (click)="send()">Enviar</button>
+  <button block (click)="scan()">Scanner</button>
 
-  <p>{{ notification | json }}</p>
+  <p>{{ barcodeData | json }}</p>
 
 </ion-content>
