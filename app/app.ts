@@ -6,6 +6,7 @@ import {CameraTestPage} from './pages/camera-test/camera-test';
 import {NetworkTestPage} from './pages/network-test/network-test';
 import {NotificationTestPage} from './pages/notification-test/notification-test';
 import {BarcodeTestPage} from './pages/barcode-test/barcode-test';
+import {VibrationTestPage} from './pages/vibration-test/vibration-test';
 
 
 @Component({
@@ -23,7 +24,8 @@ export class MyApp {
       {title: 'Camera', component: CameraTestPage},
       {title: 'Network', component: NetworkTestPage},
       {title: 'Notification', component: NotificationTestPage},
-      {title: 'Barcode', component: BarcodeTestPage}
+      {title: 'Barcode', component: BarcodeTestPage},
+      {title: 'Vibration', component: VibrationTestPage}
     ];
 
     platform.ready().then(() => {
