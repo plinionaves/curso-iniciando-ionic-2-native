@@ -1,11 +1,10 @@
-
 <ion-header>
 
   <ion-navbar>
     <button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Network</ion-title>
+    <ion-title>notification-test</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -13,8 +12,8 @@
 
 <ion-content padding>
 
-  <h2>{{ connectionType }}</h2>
+  <button block (click)="send()">Enviar</button>
 
-  <button block (click)="check()">Connection</button>
+  <p>{{ notification | json }}</p>
 
 </ion-content>
